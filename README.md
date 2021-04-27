@@ -51,6 +51,47 @@ OBS.: Fazer o mesmo passo para a Classe Produtos.
 
 <img src="NythAPI7.png">
 
+•	No POST para adicionar uma categoria ou produto sem utilizar a home page NythWebApp basta atualizar o condigo JSON.  No POST o Id é autoincremente então não precisamos colocar uma Id específica. Exemplo de como adicionar uma Categoria e um Produto:
+
+<img src="NythAPI8.png"> 
+<img src="NythAPI9.png"> 
+
+<h2>TESTANDO API COM xUNIT TEST COM MOQ</h2>
+
+Os testes de projetos são essenciais para prever problemas futuros e agilizar o processo de manutenção dos códigos. Neste projeto Foi feito o teste da função GET.
+Existem muitos frameworks que podemos usar para mocar objetos ou realizar o mocking em nossos projetos na plataforma .NET e neste artigo eu vou tratar do framework Moq que é uma biblioteca para mocar objetos para a plataforma .NET . Assim, ela suporta a mocagem de interfaces bem como classes. Sua API é extremamente simples e direta, e não requer nenhum conhecimento ou experiência prévia com os conceitos de mocking.
+ 
+A sua instalação pode ser feita via Nuget ou manualmente como veremos no projeto exemplo.
+
+•	Clicar na Solution com o botão direito e adicionar novo projeto de Test xUnit. No projeto de Test ir com o botão direito e referenciar os projetos que serão testados.  
+
+<img src="NythAPI10.png">
+
+
+•	Com o botão direito ir em Gerenciar pacote do Nugets e instalar o pacote:
+<ol>
+<li> install-Package Microsoft.EntityFrameworkCore </li>
+<li> Install-Package Microsoft.EntityFrameworkCore.SqlServer </li>
+<li> Install-Package Microsoft.EntityFrameworkCore.Tools </li>
+E também o pacote do Moq.
+</ol>
+      
+
+
+
+
+
+
+•	Adicionar nova classe ao projeto: CategoriasControllerTest.cs. No código item FACT que faz com que o Visual Studio reconheça que é um teste. Ir em adicionar e referenciar os dois projetos já existentes
+O Moq ajuda a manter o foco em somente um teste. Na parte de GET por exemplo conseguimos impedir a duplicação de uma linha de código.
+Neste teste foi feito apenas o método GET.
+
+
+
+
+
+
+
 
 
 
