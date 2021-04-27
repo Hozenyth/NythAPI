@@ -1,6 +1,6 @@
 # NythAPI
 
-<h2>CRIANDO UMA API DE CONTROLE E TESTE Xunit do MÉTODO GET</h2>
+<h2>CRIANDO UMA API DE CONTROLE E TESTE XUNIT DO MÉTODO GET</h2>
 Nesse projeto foi criado uma API (Interface de programação de Aplicação) para realizar integração do aplicativo  <a href="https://github.com/Hozenyth/NythWebApp"> 
       NythWebApp
  </a> <br>
